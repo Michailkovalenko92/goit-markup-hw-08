@@ -1,0 +1,43 @@
+/* компетенции */
+
+.competence {
+  padding: 94px 0;
+
+  & .list {
+    display: flex;
+  }
+
+  & .competence-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-title {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 93px 0;
+    color: transparent;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    height: 120px;
+
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  }
+
+  & .title {
+    display: flex;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}

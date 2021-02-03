@@ -1,0 +1,53 @@
+.example {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.example-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example-list .example-item {
+  width: calc((1200px - 100px) / 3);
+  margin-right: 30px;
+}
+
+.example-list .example-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.example-thumb {
+  display: flex;
+  position: relative;
+}
+
+.example-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  & .title {
+    margin: 0;
+    padding: 27px 0;
+
+    color: $primery-white-color;
+    text-align: center;
+  }
+}
