@@ -1,0 +1,123 @@
+.works {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.works-list__link {
+  display: block;
+
+  cursor: pointer;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--works-list-border);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    & .overlay {
+      transform: translateY(0%);
+    }
+  }
+}
+
+.image-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  padding: 63px 24px;
+
+  left: 0;
+  bottom: 0;
+
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing);
+}
+
+.works-list__title {
+  margin-bottom: 4px;
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-list__description {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--title-text-color);
+}
+
+.works-list__description-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  .works-list__item:hover &,
+  .works-list__item:focus & {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .works-list__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .works-list__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works-list__description-wrapper.card1 {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .works-list__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}

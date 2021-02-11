@@ -1,19 +1,24 @@
-@import "./base/normalaze";
-@import "./utils/variables";
-@import "./base/body";
-@import "./base/visually-hidde";
-@import "./base/container";
-@import "./utils/placeholders";
+@import "utils/variables";
+@import "utils/visially-hidden";
+@import "utils/container";
+@import "utils/placeholders";
+@import "utils/mixins";
+@import "base/common";
 
-@import "./components/logo";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/competence";
-@import "./components/working";
-@import "./components/teams";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/forma";
-@import "./components/madalka";
+@import "components/logo";
+@import "components/menu";
+@import "components/button";
+@import "components/section-title";
+@import "components/backdrop";
+@import "components/social-list";
 
-@import "./components/portfolio";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/features";
+@import "layout/service";
+@import "layout/team";
+@import "layout/clients";
+@import "layout/portfolio-button";
+@import "layout/works";
+
+@import "layout/footer";
